@@ -1,0 +1,14 @@
+/*
+   primary colors:
+   #150501, #3AOC00, #992407
+
+   buttons:
+   #4D1203,
+*/
+body {
+    font-family: 'Alegreya';
+}
+footer {
+    background: #6b1905;
+    color: #ffffff;
+}

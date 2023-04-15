@@ -7,8 +7,66 @@
 */
 body {
     font-family: 'Alegreya';
+    font-size: 1.2rem;
+}
+header{
+    background-repeat: no-repeat;
+    min-height: 350px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+nav{
+    background-color: rgba(0,0,0,0.6);
+}
+a {
+    color: #007ac3;
+    text-decoration: none;
+    background-color: transparent;
+}
+h2{
+    font-family: 'Eczar';
+}
+h3{
+    font-size: 1.5rem;
+}
+.content{
+    margin-top: 25px;
+}
+.content--main {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    color: #ffffff;
+}
+iframe{
+    width: 100%;
 }
 footer {
-    background: #6b1905;
+    background: #3a0c00;
     color: #ffffff;
+}
+.extras__item{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.extras__item:hover{
+    color: #ffcec2;
+}
+.text-highlighter{
+    font-family: 'Eczar';
+    font-weight: bold;
 }

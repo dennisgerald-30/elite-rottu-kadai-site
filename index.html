@@ -16,8 +16,8 @@
     <link href="/styles.css" rel="stylesheet" />
 </head>
 <body>
-<header style="background-image: url('/assets/cover.jpg')">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark content-video">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Elite Rottu Kadai</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,34 +33,68 @@
                 </div>
             </div>
         </div>
-        <div class="top-left">
-            <p>Elite Rottu Kadai A Pure Non Veg Restaurant</p>
-        </div>
+<!--        <div class="top-left">-->
+<!--            <p>Elite Rottu Kadai A Pure Non Veg Restaurant</p>-->
+<!--        </div>-->
     </nav>
 </header>
 <div class="main">
+    <video autoplay loop muted playsinline id="myVideo">
+        <source src="/assets/main-cover-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+<!--    <div class="content-video">-->
+<!--        <h1>Elite Rottu Kadai</h1>-->
+<!--        <p>A Pure Non Veg Restaurant</p>-->
+<!--    </div>-->
     <div class="content content--about-us container">
         <div class="row">
             <div class="col-sm-6">
-                <h2 class="text-center">About Us</h2>
+                <h2 class="text-center content--title">About Us</h2>
                 <p><span class="text-highlighter">ELITE ROTTU KADAI</span> is A Pure Heaven for Non-Veg lovers, you will get best delicious and freshly prepared chicken and meat dishes. Our cuisine consists of South India, Chinese, Arabian and Tandoori. Our special dishes are a varieties of <span class="text-highlighter">VAAZHAILLAI PAROTTA, GRILL, BBQ and TANDOORI CHICKEN</span>. Our rottukadai special <span class="text-highlighter">KARI DOSAI and BUN PAROTTA</span> are a must try ones.</p>
             </div>
             <div class="col-sm-6 d-none d-sm-block">
-                <img src="" alt="">
+                <img src="/assets/logo.jpg" alt="">
             </div>
         </div>
     </div>
     <div class="content content--menu container">
+        <h2 class="text-center mb-4 content--title">Menu</h2>
+        <p class="text-center content-secondary-title">Our Specials</p>
+        <div id="container">
+            <span id="text1"></span>
+            <span id="text2"></span>
+        </div>
 
+        <svg id="filters">
+            <defs>
+                <filter id="threshold">
+                    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 255 -140" />
+                </filter>
+            </defs>
+        </svg>
     </div>
     <div class="content content--gallery container">
-
+        <h2 class="text-center mb-4 content--title">Gallery</h2>
+        <div class="row-outer">
+            <div class="grid-gallery">
+                <div class="item item1" style="background: url(/assets/fish-fry-image.jpg);"></div>
+                <div class="item item2" style="background: url(/assets/restaurant-image-1.jpg);"></div>
+                <div class="item item3" style="background: url(/assets/restaurant-image-4.jpg);"></div>
+                <div class="item item4" style="background: url(/assets/restaurant-image-2.jpg);"></div>
+                <div class="item item5" style="background: url(/assets/chicken-bbq-image.jpg);"></div>
+                <div class="item item6" style="background: url(/assets/chicken-tandoori.jpg);"></div>
+            </div>
+        </div>
     </div>
     <div class="content content--reviews container">
 
     </div>
     <div class="content content--location container body">
-        <h2 class="text-center mb-4">Location</h2>
+        <h2 class="text-center mb-4 content--title">Location</h2>
         <div class="row">
             <div class="col-sm-6 col-lg-4">
                 <!--Google map-->
@@ -82,31 +116,31 @@
         <div class="container-block extras pb-5">
             <h2 class="py-4">Elite Rottu Kadai</h2>
             <div class="extras__row row">
-                <div class="extras__cols col-3 col-lg-3">
+                <div class="extras__cols col-sm-3 col-lg-2 col-count-2-md">
                     <p class="mb-2"><a class="extras__item" href="#aboutus">About Us</a></p>
                     <p class="mb-2"><a class="extras__item" href="#menu">Menu</a></p>
                     <p class="mb-2"><a class="extras__item" href="#gallery">Gallery</a></p>
-                    <p class="mb-2"><a class="extras__item" href="#reviews">Reviews</a></p>
                     <p class="mb-2"><a class="extras__item" href="#location">Location</a></p>
                 </div>
-                <div class="extras__group col-6 col-lg-6">
-                    <div class="extras__cols">
-                        <h3 class="extras__group-title">
-                            Address:
-                        </h3>
-                        <p>No:2, Benwells Rd, Cantonment, Tiruchirappalli, Tamil Nadu 620001, India</p>
-                    </div>
-                    <div class="extras__cols">
-                        <h3 class="extras__group-title">
-                            Contact Us:
-                        </h3>
-                        <p>Phone: <a class="extras__item" href="tel:+919787610700">+91 97876 10700</a></p>
-                    </div>
+                <div class="extras__cols col-sm-4">
+                    <h3 class="extras__group-title">
+                        Address:
+                    </h3>
+                    <p>No:2, Benwells Rd, Cantonment, Tiruchirappalli, Tamil Nadu 620001, India</p>
                 </div>
-                <div class="extras__group col-3">
+                <div class="extras__cols col-sm-3">
+                    <h3 class="extras__group-title">
+                        Contact Us:
+                    </h3>
+                    <p>Phone: <a class="extras__item" href="tel:+919787610700">+91 97876 10700</a></p>
+                </div>
+                <div class="extras__cols col-sm-3">
+                    <h3 class="extras__group-title">
+                        Follow Us On:
+                    </h3>
                     <div class="extras__cols social-media-icons">
-                        <a href="https://www.facebook.com/EliteRottuKadai">
-                            <img src="/assets/facebook_media_online_social_icon.png" class="icons facebook-icon" alt="Follow Us On Facebook">
+                        <a href="https://www.facebook.com/eliterottukadai">
+                            <img src="/assets/facebook-icon.png" class="icons facebook-icon" alt="Follow Us On Facebook">
                         </a>
                         <a href="https://www.instagram.com/EliteRottuKadai">
                             <img src="/assets/instagram_logo.png" class="icons instagram-icon" alt="Follow Us On Instagram">
@@ -118,5 +152,89 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    const elts = {
+        text1: document.getElementById("text1"),
+        text2: document.getElementById("text2")
+    };
+
+    const texts = [
+        "Kari Dosa",
+        "Vaazhaillai Parotta",
+        "Grill Chicken",
+        "Bun Parotta",
+        "BBQ"
+    ];
+
+    const morphTime = 1;
+    const cooldownTime = 1.5;
+
+    let textIndex = texts.length - 1;
+    let time = new Date();
+    let morph = 0;
+    let cooldown = cooldownTime;
+
+    elts.text1.textContent = texts[textIndex % texts.length];
+    elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+
+    function doMorph() {
+        morph -= cooldown;
+        cooldown = 0;
+
+        let fraction = morph / morphTime;
+
+        if (fraction > 1) {
+            cooldown = cooldownTime;
+            fraction = 1;
+        }
+
+        setMorph(fraction);
+    }
+
+    function setMorph(fraction) {
+        elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+        elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+        fraction = 1 - fraction;
+        elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+        elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+        elts.text1.textContent = texts[textIndex % texts.length];
+        elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+    }
+
+    function doCooldown() {
+        morph = 0;
+
+        elts.text2.style.filter = "";
+        elts.text2.style.opacity = "100%";
+
+        elts.text1.style.filter = "";
+        elts.text1.style.opacity = "0%";
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+
+        let newTime = new Date();
+        let shouldIncrementIndex = cooldown > 0;
+        let dt = (newTime - time) / 1000;
+        time = newTime;
+
+        cooldown -= dt;
+
+        if (cooldown <= 0) {
+            if (shouldIncrementIndex) {
+                textIndex++;
+            }
+
+            doMorph();
+        } else {
+            doCooldown();
+        }
+    }
+
+    animate();
+</script>
 </body>
 </html>

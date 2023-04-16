@@ -28,37 +28,37 @@
                     <a class="nav-link active" aria-current="page" href="#aboutus">About Us</a>
                     <a class="nav-link" href="#menu">Menu</a>
                     <a class="nav-link" href="#gallery">Gallery</a>
-                    <a class="nav-link" href="#reviews">Reviews</a>
                     <a class="nav-link" href="#location">Location</a>
                 </div>
             </div>
         </div>
-<!--        <div class="top-left">-->
-<!--            <p>Elite Rottu Kadai A Pure Non Veg Restaurant</p>-->
-<!--        </div>-->
     </nav>
 </header>
 <div class="main">
-    <video autoplay loop muted playsinline id="myVideo">
-        <source src="/assets/main-cover-video.mp4" type="video/mp4">
+    <video autoplay loop muted preload="auto" id="myVideo">
+        <source src="/assets/Elite-Rottu-Kadai-Cover-Video.mov" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
-<!--    <div class="content-video">-->
-<!--        <h1>Elite Rottu Kadai</h1>-->
-<!--        <p>A Pure Non Veg Restaurant</p>-->
-<!--    </div>-->
-    <div class="content content--about-us container">
+    <div class="content content--about-us container" id="aboutus">
         <div class="row">
             <div class="col-sm-6">
                 <h2 class="text-center content--title">About Us</h2>
                 <p><span class="text-highlighter">ELITE ROTTU KADAI</span> is A Pure Heaven for Non-Veg lovers, you will get best delicious and freshly prepared chicken and meat dishes. Our cuisine consists of South India, Chinese, Arabian and Tandoori. Our special dishes are a varieties of <span class="text-highlighter">VAAZHAILLAI PAROTTA, GRILL, BBQ and TANDOORI CHICKEN</span>. Our rottukadai special <span class="text-highlighter">KARI DOSAI and BUN PAROTTA</span> are a must try ones.</p>
             </div>
             <div class="col-sm-6 d-none d-sm-block">
-                <img src="/assets/logo.jpg" alt="">
+                <div class="row">
+                    <div class="column">
+                        <img src="/assets/logo.jpg" alt="Restaurant Image">
+                        <img src="/assets/restaurant-image-front.jpg" alt="Restaurant Image">
+                    </div>
+                    <div class="column">
+                        <img src="/assets/restaurant-image-3.jpg" alt="Restaurant Image">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="content content--menu container">
+    <div class="content content--menu container" id="menu">
         <h2 class="text-center mb-4 content--title">Menu</h2>
         <p class="text-center content-secondary-title">Our Specials</p>
         <div id="container">
@@ -77,23 +77,20 @@
             </defs>
         </svg>
     </div>
-    <div class="content content--gallery container">
+    <div class="content content--gallery container" id="gallery">
         <h2 class="text-center mb-4 content--title">Gallery</h2>
         <div class="row-outer">
             <div class="grid-gallery">
                 <div class="item item1" style="background: url(/assets/fish-fry-image.jpg);"></div>
                 <div class="item item2" style="background: url(/assets/restaurant-image-1.jpg);"></div>
-                <div class="item item3" style="background: url(/assets/restaurant-image-4.jpg);"></div>
+                <div class="item item3" style="background: url(/assets/vaazhaliillai-parotta.jpg);"></div>
                 <div class="item item4" style="background: url(/assets/restaurant-image-2.jpg);"></div>
                 <div class="item item5" style="background: url(/assets/chicken-bbq-image.jpg);"></div>
                 <div class="item item6" style="background: url(/assets/chicken-tandoori.jpg);"></div>
             </div>
         </div>
     </div>
-    <div class="content content--reviews container">
-
-    </div>
-    <div class="content content--location container body">
+    <div class="content content--location container" id="location">
         <h2 class="text-center mb-4 content--title">Location</h2>
         <div class="row">
             <div class="col-sm-6 col-lg-4">

@@ -35,7 +35,7 @@
     </nav>
 </header>
 <div class="main">
-    <video loop autoplay="autoplay" muted="true" playsinline="playsinline" preload="auto" id="myVideo">
+    <video loop autoplay muted playsinline preload="auto" id="myVideo">
         <source src="/assets/main-cover-video.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
@@ -91,21 +91,133 @@
     <div class="content content--menu container" id="menu">
         <h2 class="text-center mb-4 content--title">Menu</h2>
         <p class="text-center content-secondary-title">Our Specials</p>
-        <div id="container">
-            <span id="text1"></span>
-            <span id="text2"></span>
-        </div>
+        <div class="mb-4">
+            <div id="container">
+                <span id="text1"></span>
+                <span id="text2"></span>
+            </div>
 
-        <svg id="filters">
-            <defs>
-                <filter id="threshold">
-                    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+            <svg id="filters">
+                <defs>
+                    <filter id="threshold">
+                        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
                   0 1 0 0 0
                   0 0 1 0 0
                   0 0 0 255 -140" />
-                </filter>
-            </defs>
-        </svg>
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+        <div class="text-center">
+            <a role="button" tabindex="0" class="btn btn-primary btn-lg" onclick="showFullMenu()">See Full Menu</a>
+        </div>
+        <div class="accordion mt-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Chinese
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center animated zoomOut">
+                        <p>Fried Rice / Noodles Varieties</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Chicken</p>
+                                <hr>
+                                <p>Mutton</p>
+                                <hr>
+                                <p>Prawn</p>
+                                <hr class="d-md-none">
+                            </div>
+                            <div class="col-md-4">
+                                <p>Mixed</p>
+                                <hr>
+                                <p>Schezwan</p>
+                                <hr>
+                                <p>Egg</p>
+                                <hr class="d-md-none">
+                            </div>
+                            <div class="col-md-4">
+                                <p>Panneer</p>
+                                <hr>
+                                <p>Mushroom</p>
+                                <hr>
+                                <p>Veg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Tandoori
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center animated zoomOut">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Romali Roti</p>
+                                <hr>
+                                <p>Naan</p>
+                                <hr>
+                                <p>Butter Naan</p>
+                                <hr>
+                                <p>Rotti</p>
+                                <hr class="d-md-none">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Butter Rotti</p>
+                                <hr>
+                                <p>Kulcha</p>
+                                <hr>
+                                <p>Garlic Naan</p>
+                                <hr>
+                                <p>Pulkha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Parotta Varieties
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center animated zoomOut">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Parotta</p>
+                                <hr>
+                                <p>Sweet Parotta</p>
+                                <hr>
+                                <p>Bun Parotta</p>
+                                <hr>
+                                <p>Viruthunagar Oil Parotta</p>
+                                <hr>
+                                <p>Veechu Parotta</p>
+                                <hr class="d-md-none">
+                            </div>
+                            <div class="col-md-6">
+                                <p>Kuzhambu Parotta</p>
+                                <hr>
+                                <p>Muttai Kothu Parotta</p>
+                                <hr>
+                                <p>Ceylon Parotta</p>
+                                <hr>
+                                <p>Ceylon Kothu Parotta</p>
+                                <hr>
+                                <p>Kari Kothu Parotta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="content content--gallery container" id="gallery">
         <h2 class="text-center mb-4 content--title">Gallery</h2>
@@ -179,6 +291,7 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script>
     const elts = {
         text1: document.getElementById("text1"),
@@ -186,11 +299,11 @@
     };
 
     const texts = [
-        "Kari Dosa",
         "Vaazhaillai Parotta",
         "Grill Chicken",
-        "Bun Parotta",
-        "BBQ"
+        "Kuzhambu Parotta",
+        "Madurai Kari Dosa",
+        "Sweet Parotta"
     ];
 
     const morphTime = 1;
@@ -262,6 +375,31 @@
     }
 
     animate();
+
+    const $accordionExample =  $('#accordionExample')
+    function toggleChevron(e) {
+        $(this).find('.animated').toggleClass('zoomIn zoomOut');
+        if(e.type === 'shown'){
+            $('html,body').animate({
+                scrollTop: $(this).parent().find('.accordion-header').offset().top - 10
+            }, 500);
+        }
+    }
+
+    function showFullMenu(){
+        $accordionExample.show(1000);
+        $('html,body').animate({
+            scrollTop: $accordionExample.offset().top - 70
+        }, 500);
+    }
+
+    $(document).ready(function (){
+        const $accordionCollapse = $('.accordion-collapse')
+        $accordionCollapse.on('hidden.bs.collapse', toggleChevron);
+        $accordionCollapse.on('shown.bs.collapse', toggleChevron);
+        $accordionExample.hide();
+    })
+
 </script>
 </body>
 </html>
